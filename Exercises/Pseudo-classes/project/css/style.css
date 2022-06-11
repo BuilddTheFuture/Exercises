@@ -1,0 +1,116 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+.first-list,
+.second-list {
+	list-style: none;
+}
+.second-list {
+	margin-top: 81px;
+}
+.first-list > .first-list__item,
+.second-list > .second-list__item {
+  position: relative;
+	margin-bottom: 17px;
+}
+.first-list__item,
+.second-list__item {
+	font-size: 20px;
+	color: #273d46;
+}
+.first-list .first-list__item:first-child span{
+	text-decoration: line-through;
+}
+.first-list .first-list__item:nth-child(2) span{
+	font-weight: 700;
+}
+.first-list .first-list__item:nth-child(3) span{
+	font-style: italic;
+}
+.first-list .first-list__item:last-child {
+	text-transform: uppercase;
+}
+.first-list > .first-list__item::before,
+.second-list > .second-list__item::before {
+	content: '✔';
+	color: green;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.second-list > .second-list__item:hover {
+	color: #d55a5a;
+}
+.second-list .second-list__item:last-child {
+	margin-bottom: 0;
+}
+.btn-box .btn:nth-child(1) {
+	margin: 0 96px 0 25px;
+}
+.btn-box .btn:nth-child(2) {
+	margin: 0 96px 0 0;
+}
+.btn {
+	color: white;
+	background-color: #80b7b3;
+	padding: 17px 30px;
+	border-radius: 50px;
+	min-width: 200px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.btn-box {
+	margin-top: 137px;
+}
+.btn:hover {
+	color: white;
+	background-color: #3a5856;
+	box-shadow: 0 0 10px #9cece7;
+}
+.btn:active {
+	color: white;
+	background-color: #818181;
+}
+.input-box {
+	margin: 100px 0 0 1px;
+}
+.input-box input {
+	border: 1px solid grey;
+	min-width: 292px;
+	height: 51px;
+	font-size: 20px;
+	padding: 0 15px;
+}
+.input-box input:focus {
+	border: 1px solid #7fbed5;
+	box-shadow: 0 0 15px #7bb8ce;
+	color: #3a5856;
+}
+.input-box input:nth-child(2) {
+	margin-left: 35px;
+}
+
+
+/* Адаптив  */
+@media screen and (min-width: 992px) {
+	body .container {
+		max-width: 842px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 126px auto 0;
+	}
+}
